@@ -27,18 +27,25 @@ public class CienNumerosPrimos {
         String resultado = "";
         int contador = 0;
         int numero = 1;
-        
+
+
         while (contador < 100) {
             if (esPrimo(numero)) {
                 resultado += numero + ", ";
                 contador++;
             }
             numero++;
-            
+
         }
-        System.out.println("Los primeros 100 numeros son "+ resultado);
+        System.out.println("Los primeros 100 numeros son " + resultado);
     }
 
+    /**
+     * Función que analiza si un numero es primo o no
+     *
+     * @param numero es el numero que va aumentando comanzando en uno
+     * @return retorna si un boolean si un numero es o no primo
+     */
     private static Boolean esPrimo(int numero) {
 
         boolean esNPrimo = true;
